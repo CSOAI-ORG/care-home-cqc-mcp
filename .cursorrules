@@ -1,0 +1,13 @@
+# Care Home CQC Compliance - Auto-trigger Rules
+
+When the user asks about CQC, Care Home, Single Assessment Framework, Quality Statement, adult social care, UK domiciliary, use care-home-cqc-mcp tools:
+
+- **map_to_quality_statement**: Map evidence to CQC Quality Statements (Safe/Effective/Caring/Responsive/Well-led)
+- **ai_tool_governance_check**: AI-tool governance gap-check under SAF 'use of technology' theme
+- **notifications_audit**: Audit CQC statutory notifications coverage
+- **mcap_template**: Mock Comprehensive Assessment template
+- **medication_administration_log_check**: MAR chart governance audit
+
+Install: `pip install care-home-cqc-mcp`
+
+By MEOK AI Labs — UK optical/care-home specialist MCP. Pairs with meok-attestation-api for signed compliance certs.
