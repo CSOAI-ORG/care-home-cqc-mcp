@@ -1,37 +1,78 @@
-# Care Home CQC Compliance
+# Care Home Cqc MCP
 
-[![PyPI](https://img.shields.io/pypi/v/care-home-cqc-mcp)](https://pypi.org/project/care-home-cqc-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-uk--specialist-purple)](https://meok.ai)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/care_home_cqc_mcp/)
 
-CQC Single Assessment Framework (SAF) compliance for adult social care + care homes. Maps Quality Statements to evidence + AI-tool governance.
+> UK CQC Single Assessment Framework compliance MCP
 
-## Install
+UK CQC Single Assessment Framework compliance MCP. KLOEs + NICE NG5 + DSPT.
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-pip install care-home-cqc-mcp
+# Install via pip
+pip install care_home_cqc_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install care-home-cqc-mcp --client claude
 ```
 
-## Tools
+## ✨ Features
 
-| Tool | Purpose |
-|------|---------|
-| `map_to_quality_statement` | Map evidence to CQC Quality Statements (Safe/Effective/Caring/Responsive/Well-led) |
-| `ai_tool_governance_check` | AI-tool governance gap-check under SAF 'use of technology' theme |
-| `notifications_audit` | Audit CQC statutory notifications coverage |
-| `mcap_template` | Mock Comprehensive Assessment template |
-| `medication_administration_log_check` | MAR chart governance audit |
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Built by a UK practitioner
+## 📖 Documentation
 
-Nicholas Templeman runs an active UK optical practice (templeman-opticians.com) + AI compliance company. This MCP encodes lessons from real workflows, not paperwork theory.
+- [Full Documentation](https://docs.meok.ai/care-home-cqc-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-## Pricing
+## 🛡️ Compliance
 
-- **Free**: 10 calls/day. No API key.
-- **Pro** £79/mo: unlimited + signed attestations. [Subscribe](https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836)
-- **Enterprise** £1,499/mo: white-label + on-premise. hello@meok.ai
+This MCP server is built with **EU AI Act compliance** built-in:
 
-## License
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-MIT © MEOK AI Labs
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
+
+## 🏢 Enterprise
+
+Need custom development, SLA guarantees, or white-label deployment?
+
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
+
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
+
+## 🤝 Part of the MEOK Ecosystem
+
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
+
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
+
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
