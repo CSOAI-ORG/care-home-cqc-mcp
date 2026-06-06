@@ -1,0 +1,28 @@
+{
+  "name": "care-home-cqc-mcp",
+  "title": "Care Home Cqc Mcp",
+  "description": "CQC Single Assessment Framework (SAF) compliance for adult social care + care homes. Maps Quality Statements to evidence + AI-tool governance.",
+  "version": "1.0.3",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "map_to_quality_statement"
+    },
+    {
+      "name": "ai_tool_governance_check"
+    },
+    {
+      "name": "notifications_audit"
+    },
+    {
+      "name": "mcap_template"
+    },
+    {
+      "name": "medication_administration_log_check"
+    }
+  ]
+}

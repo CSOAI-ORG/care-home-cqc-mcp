@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "care-home-cqc-mcp"
-version = "1.0.1"
+version = "1.0.3"
 description = "CQC Single Assessment Framework (SAF) compliance for adult social care + care homes. Maps Quality Statements to evidence + AI-tool governance."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
@@ -20,7 +20,7 @@ dependencies = ["mcp>=1.0.0"]
 
 [project.urls]
 Homepage = "https://meok.ai"
-Repository = "https://github.com/meok-ai-labs/care-home-cqc-mcp"
+Repository = "https://github.com/CSOAI-ORG/care-home-cqc-mcp"
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]

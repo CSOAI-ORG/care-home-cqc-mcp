@@ -1,32 +1,21 @@
-# Care Home Cqc MCP
+# care-home-cqc-mcp
 
-> UK CQC Single Assessment Framework compliance MCP
+> CQC Single Assessment Framework (SAF) compliance for adult social care + care homes. Maps Quality Statements to evidence + AI-tool governance.
 
-`care-home-cqc-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- map_to_quality_statement
+- ai_tool_governance_check
+- notifications_audit
+- mcap_template
+- medication_administration_log_check
 
 ## Install
-
-```bash
+```
 pip install care-home-cqc-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx care-home-cqc-mcp
-```
-
-## Tools
-
-- `map_to_quality_statement` — Map evidence to CQC Quality Statements (Safe/Effective/Caring/Responsive/Well-led).
-- `ai_tool_governance_check` — AI-tool governance gap-check under SAF 'use of technology' theme.
-- `notifications_audit` — Audit CQC statutory notifications coverage.
-- `mcap_template` — Mock Comprehensive Assessment template.
-- `medication_administration_log_check` — MAR chart governance audit.
-
 ## Links
-
-- Source: https://github.com/CSOAI-ORG/care-home-cqc-mcp
 - PyPI: https://pypi.org/project/care-home-cqc-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+- Docs: https://meok.ai

@@ -1,0 +1,28 @@
+name: care-home-cqc-mcp
+description: 'MCP server: care-home-cqc-mcp'
+version: 1.0.5
+author: MEOK AI Labs
+homepage: https://safetyof.ai
+repository: https://github.com/MEOK-AI-Labs/care-home-cqc-mcp
+license: MIT
+categories:
+- compliance
+- governance
+tools:
+- name: map_to_quality_statement
+  description: Map evidence to CQC Quality Statements (Safe/Effective/Caring/Responsive/Well-led).
+- name: ai_tool_governance_check
+  description: AI-tool governance gap-check under SAF 'use of technology' theme.
+- name: notifications_audit
+  description: Audit CQC statutory notifications coverage.
+- name: mcap_template
+  description: Mock Comprehensive Assessment template.
+- name: medication_administration_log_check
+  description: MAR chart governance audit.
+build:
+  type: python
+  entrypoint: server.py
+  dependencies:
+  - mcp>=1.0.0
+runtime:
+  python: '>=3.10'

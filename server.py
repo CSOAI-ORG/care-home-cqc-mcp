@@ -34,14 +34,14 @@ def check_access(api_key: str = ""):
         return True, "OK", "pro"
     if _MEOK_API_KEY and api_key and api_key != _MEOK_API_KEY:
         return False, "Invalid API key.", "free"
-    return True, "OK", "free"
+    return True, "OK, Pro at https://www.csoai.org/checkout", "free"
 
 
 def _check_rate_limit(tool_name: str) -> None:
     now = time.time()
     _call_counts[tool_name] = [t for t in _call_counts[tool_name] if now - t < WINDOW]
     if len(_call_counts[tool_name]) >= FREE_TIER_LIMIT:
-        raise ValueError(f"Rate limit exceeded for {tool_name}. Free tier: {FREE_TIER_LIMIT}/day. Upgrade at https://meok.ai/pricing")
+        raise ValueError(f"Rate limit exceeded for {tool_name}. Free tier: {FREE_TIER_LIMIT}/day. Upgrade at https://councilof.ai")
     _call_counts[tool_name].append(now)
 
 
@@ -55,7 +55,7 @@ def map_to_quality_statement(evidence: str, domain: str = "Safe", api_key: str =
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"}
     _check_rate_limit("map_to_quality_statement")
 
     domains = {"Safe": ["S1", "S2", "S3", "S4", "S5", "S6"],
@@ -96,7 +96,7 @@ def ai_tool_governance_check(tool_name: str, purpose: str, data_types: list, api
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"}
     _check_rate_limit("ai_tool_governance_check")
 
     gaps = []
@@ -121,7 +121,7 @@ def notifications_audit(notification_type: str, last_30_days: int = 0, api_key: 
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"}
     _check_rate_limit("notifications_audit")
 
     required_types = ["death", "abuse", "safeguarding", "infection", "medication_error", "incident"]
@@ -141,7 +141,7 @@ def mcap_template(care_home_name: str, service_user_count: int, api_key: str = "
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"}
     _check_rate_limit("mcap_template")
 
     template = {
@@ -168,7 +168,7 @@ def medication_administration_log_check(mar_entries: list, api_key: str = "") ->
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"}
     _check_rate_limit("medication_administration_log_check")
 
     issues = []
