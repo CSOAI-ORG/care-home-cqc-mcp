@@ -1,0 +1,68 @@
+{
+  "name": "care-home-cqc-mcp",
+  "description": "UK Care Quality Commission (CQC) Single Assessment Framework compliance for care homes. AI-assisted",
+  "url": "https://proofof.ai/scorecard/care-home-cqc-mcp.html",
+  "version": "1.0.3",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "map_to_quality_statement",
+      "name": "Map To Quality Statement",
+      "description": "map_to_quality_statement via care-home-cqc-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "ai_tool_governance_check",
+      "name": "Ai Tool Governance Check",
+      "description": "ai_tool_governance_check via care-home-cqc-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "notifications_audit",
+      "name": "Notifications Audit",
+      "description": "notifications_audit via care-home-cqc-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "mcap_template",
+      "name": "Mcap Template",
+      "description": "mcap_template via care-home-cqc-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "medication_administration_log_check",
+      "name": "Medication Administration Log Check",
+      "description": "medication_administration_log_check via care-home-cqc-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

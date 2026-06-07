@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "care-home-cqc-mcp",
+    "description": "UK Care Quality Commission (CQC) Single Assessment Framework compliance for care homes. AI-assisted",
+    "version": "1.0.3",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "care-home-cqc-mcp"
+      }
+    ],
+    "capabilities": [
+      "map_to_quality_statement",
+      "ai_tool_governance_check",
+      "notifications_audit",
+      "mcap_template",
+      "medication_administration_log_check"
+    ]
+  }
+}
