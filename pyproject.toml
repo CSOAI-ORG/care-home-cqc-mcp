@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "care-home-cqc-mcp"
-version = "1.0.4"
+version = "1.0.5"
 description = "CQC Single Assessment Framework (SAF) compliance for adult social care + care homes. Maps Quality Statements to evidence + AI-tool governance."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
