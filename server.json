@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/care-home-cqc-mcp",
   "version": "1.0.1",
-  "description": "UK Care Quality Commission (CQC) Single Assessment Framework compliance for care homes. AI-assisted evidence collation against KLOEs (Safe, Effective, Caring, Responsive, Well-led), inspection prep, NICE guidance crosswalk, medication management (NICE NG5), and DSPT alignment.",
+  "description": "UK Care Quality Commission (CQC) Single Assessment Framework compliance for care homes. AI-assisted",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/care-home-cqc-mcp",
     "source": "github"
