@@ -1,0 +1,122 @@
+{
+  "name": "Care Home Cqc Mcp",
+  "version": "1.0.3",
+  "url": "https://mcp.meok.ai/care-home-cqc-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "CQC Single Assessment Framework (SAF) compliance for adult social care + care homes. Maps Quality Statements to evidence + AI-tool governance.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "map_to_quality_statement",
+      "name": "Map To Quality Statement",
+      "description": "Map To Quality Statement — a tool of the care-home-cqc-mcp MCP.",
+      "tags": [
+        "compliance",
+        "governance",
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "ai_tool_governance_check",
+      "name": "Ai Tool Governance Check",
+      "description": "Ai Tool Governance Check — a tool of the care-home-cqc-mcp MCP.",
+      "tags": [
+        "compliance",
+        "governance",
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "notifications_audit",
+      "name": "Notifications Audit",
+      "description": "Notifications Audit — a tool of the care-home-cqc-mcp MCP.",
+      "tags": [
+        "compliance",
+        "governance",
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "mcap_template",
+      "name": "Mcap Template",
+      "description": "Mcap Template — a tool of the care-home-cqc-mcp MCP.",
+      "tags": [
+        "compliance",
+        "governance",
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "medication_administration_log_check",
+      "name": "Medication Administration Log Check",
+      "description": "Medication Administration Log Check — a tool of the care-home-cqc-mcp MCP.",
+      "tags": [
+        "compliance",
+        "governance",
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "care-home-cqc-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
