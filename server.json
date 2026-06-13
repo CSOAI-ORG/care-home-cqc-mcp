@@ -5,7 +5,8 @@
   "description": "UK Care Quality Commission (CQC) Single Assessment Framework compliance for care homes. AI-assisted",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/care-home-cqc-mcp",
-    "source": "github"
+    "source": "github",
+    "id": "1242000997"
   },
   "packages": [
     {
