@@ -126,3 +126,8 @@ Once configured, ask your assistant, for example:
 - "Use `map_to_quality_statement` to …"
 - "Use `ai_tool_governance_check` to …"
 - "Use `notifications_audit` to …"
+
+## See also
+
+MEOK compliance MCP fleet:
+[`care-membrane-mcp`](https://github.com/CSOAI-ORG/care-membrane-mcp)
