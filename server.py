@@ -76,7 +76,7 @@ def map_to_quality_statement(evidence: str, domain: str = "Safe", api_key: str =
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t"}
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
     _check_rate_limit("map_to_quality_statement")
 
     domains = {"Safe": ["S1", "S2", "S3", "S4", "S5", "S6"],
@@ -117,7 +117,7 @@ def ai_tool_governance_check(tool_name: str, purpose: str, data_types: list, api
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t"}
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
     _check_rate_limit("ai_tool_governance_check")
 
     gaps = []
@@ -142,7 +142,7 @@ def notifications_audit(notification_type: str, last_30_days: int = 0, api_key: 
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t"}
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
     _check_rate_limit("notifications_audit")
 
     required_types = ["death", "abuse", "safeguarding", "infection", "medication_error", "incident"]
@@ -162,7 +162,7 @@ def mcap_template(care_home_name: str, service_user_count: int, api_key: str = "
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t"}
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
     _check_rate_limit("mcap_template")
 
     template = {
@@ -189,7 +189,7 @@ def medication_administration_log_check(mar_entries: list, api_key: str = "") ->
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t"}
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
     _check_rate_limit("medication_administration_log_check")
 
     issues = []
@@ -211,10 +211,10 @@ if __name__ == "__main__":
     main()
 
 
-# ── MEOK monetization layer (Stripe upgrade · PAYG · pricing) ──────────
-# Free tier is zero-config. Upgrade to Pro (unlimited) or pay-as-you-go per call.
+# ── MEOK pricing pointer (pay per delivered job; no subscriptions) ──────────
+# No tiers. Jobs are quoted individually at https://meok.ai/pricing.
 import os as _meok_os
-MEOK_STRIPE_UPGRADE = "https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t"  # Pro (unlimited)
+MEOK_STRIPE_UPGRADE = "https://meok.ai/pricing"  # Pro (unlimited)
 MEOK_PAYG_KEY = _meok_os.environ.get("MEOK_PAYG_KEY", "")  # set to enable PAYG (x402 / ~GBP0.05 per call)
 MEOK_PRICING = "https://meok.ai/pricing"
 
